@@ -74,11 +74,11 @@
                     <!-- <div>2018 - Present</div> -->
                   </div>
                   <div class="d-flex justify-content-between">
-                    <span class="font-weight-lighter">Software Engineer</span>
+                    <span class="font-weight-lighter">Software Engineer <a href="#"><i class="fas fa-info-circle"></i></a></span>
                     <span>2019 - now</span>
                   </div>
                   <div class="d-flex justify-content-between">
-                    <span class="font-weight-lighter">Junior Software Engineer</span>
+                    <span class="font-weight-lighter">Junior Software Engineer <a href="#"><i class="fas fa-info-circle"></i></a></span>
                     <span>2018 - 2019</span>
                   </div>
                 </div>
