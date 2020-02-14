@@ -8,16 +8,102 @@
         <mdb-col col="sm" class="pt-3">
           <h4>Skills</h4>
           <Skills />
-          <h4 class="mt-3">Experience</h4>
-          <mdb-card class="mt-3">
-            <mdb-list-group>
-              <mdb-list-group-item>Prog[in]ress</mdb-list-group-item>
-            </mdb-list-group>
-          </mdb-card>
           <h4 class="mt-3">Education</h4>
           <mdb-card class="mt-3">
             <mdb-list-group>
-              <mdb-list-group-item>Prog[in]ress</mdb-list-group-item>
+              <mdb-list-group-item>
+                <img
+                  src="../assets/uofm.png"
+                  class="img-fluid z-depth-1 rounded-circle mr-3"
+                  alt="University of Michigan"
+                  width="50px"
+                />
+                <div class="w-100">
+                  <div class="d-flex justify-content-between">
+                    <div class="text-left">
+                      <strong>University of Michigan</strong>
+                      <small class="ml-2">Dearborn, MI</small>
+                    </div>
+                    <i class="far fa-clock"></i>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <span class="font-weight-lighter">M.S. Software Engineering</span>
+                    <div>2019 - 2020</div>
+                  </div>
+                </div>
+              </mdb-list-group-item>
+              <mdb-list-group-item>
+                <img
+                  src="../assets/cmu.png"
+                  class="img-fluid z-depth-1 rounded-circle mr-3"
+                  alt="Central Michigan University"
+                  width="50px"
+                />
+                <div class="w-100">
+                  <div class="d-flex justify-content-between">
+                    <div class="text-left">
+                      <strong>Central Michigan University</strong>
+                      <small class="ml-2">Mt. Pleasant, MI</small>
+                    </div>
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <span class="font-weight-lighter">B.S. Computer Science</span>
+                    <div>2014 - 2018</div>
+                  </div>
+                </div>
+              </mdb-list-group-item>
+            </mdb-list-group>
+          </mdb-card>
+          <h4 class="mt-3">Experience</h4>
+          <mdb-card class="mt-3">
+            <mdb-list-group>
+              <mdb-list-group-item>
+                <img
+                  src="../assets/ford.png"
+                  class="img-fluid z-depth-1 rounded-circle mr-3"
+                  alt="Ford Motor Company"
+                  width="50px"
+                />
+                <div class="w-100">
+                  <div class="d-flex justify-content-between">
+                    <div class="text-left">
+                      <strong>Ford Motor Company</strong>
+                      <small class="ml-2">Dearborn, MI</small>
+                    </div>
+                    <!-- <div>2018 - Present</div> -->
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <span class="font-weight-lighter">Software Engineer</span>
+                    <span>2019 - now</span>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <span class="font-weight-lighter">Junior Software Engineer</span>
+                    <span>2018 - 2019</span>
+                  </div>
+                </div>
+              </mdb-list-group-item>
+              <mdb-list-group-item>
+                <img
+                  src="../assets/gfs.png"
+                  class="img-fluid z-depth-1 rounded-circle mr-3"
+                  alt="Gordon Food Service"
+                  width="50px"
+                />
+                <div class="w-100">
+                  <div class="d-flex justify-content-between">
+                    <div class="text-left">
+                      <strong>Gordon Food Service</strong>
+                      <small class="ml-2">Grand Rapids, MI</small>
+                    </div>
+                    <!-- <div>2018 - Present</div> -->
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <span class="font-weight-lighter">Software Development Intern</span>
+                    <span>2017</span>
+                  </div>
+                </div>
+              </mdb-list-group-item>
             </mdb-list-group>
           </mdb-card>
           <h4 class="mt-3">Projects</h4>
@@ -90,12 +176,16 @@ import {
   mdbRow,
   mdbCol,
   mdbListGroup,
-  mdbListGroupItem
+  mdbListGroupItem,
+  animateOnScroll
   //mdbTooltip
 } from "mdbvue";
 
 export default {
   name: "home",
+  directives: {
+    animateOnScroll
+  },
   components: {
     mdbCard,
     mdbContainer,
