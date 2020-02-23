@@ -9,52 +9,7 @@
           <h4>Skills</h4>
           <Skills />
           <h4 class="mt-3">Education</h4>
-          <mdb-card class="mt-3">
-            <mdb-list-group>
-              <mdb-list-group-item>
-                <img
-                  src="../assets/uofm.png"
-                  class="img-fluid z-depth-1 rounded-circle mr-3"
-                  alt="University of Michigan"
-                  width="50px"
-                />
-                <div class="w-100">
-                  <div class="d-flex justify-content-between">
-                    <div class="text-left">
-                      <strong>University of Michigan</strong>
-                      <small class="ml-2">Dearborn, MI</small>
-                    </div>
-                    <i class="far fa-clock"></i>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <span class="font-weight-lighter">M.S. Software Engineering</span>
-                    <div>2019 - 2020</div>
-                  </div>
-                </div>
-              </mdb-list-group-item>
-              <mdb-list-group-item>
-                <img
-                  src="../assets/cmu.png"
-                  class="img-fluid z-depth-1 rounded-circle mr-3"
-                  alt="Central Michigan University"
-                  width="50px"
-                />
-                <div class="w-100">
-                  <div class="d-flex justify-content-between">
-                    <div class="text-left">
-                      <strong>Central Michigan University</strong>
-                      <small class="ml-2">Mt. Pleasant, MI</small>
-                    </div>
-                    <i class="fas fa-graduation-cap"></i>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <span class="font-weight-lighter">B.S. Computer Science</span>
-                    <div>2014 - 2018</div>
-                  </div>
-                </div>
-              </mdb-list-group-item>
-            </mdb-list-group>
-          </mdb-card>
+          <Education/>
           <h4 class="mt-3">Experience</h4>
           <mdb-card class="mt-3">
             <mdb-list-group>
@@ -168,6 +123,7 @@ import Hero from "@/components/Home/Hero.vue";
 import LinkedInBox from "@/components/LinkedInBox/LinkedInBox";
 import Footer from "@/components/Footer.vue";
 import Skills from "@/components/Home/Skills";
+import Education from "@/components/Home/Education";
 import JobPostingModal from "@/components/JobPostingModal.vue";
 import CoverLetterModal from "@/components/CoverLetterModal.vue";
 import {
@@ -198,6 +154,7 @@ export default {
     LinkedInBox,
     Footer,
     Skills,
+    Education,
     JobPostingModal,
     CoverLetterModal
   },
