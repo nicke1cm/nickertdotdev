@@ -2,7 +2,7 @@
   <div class="education">
     <mdb-card class="mt-3">
       <mdb-list-group>
-        <div v-on:mouseover="enterUOfM" v-on:mouseleave="leaveUOfM">
+        <div v-on:mouseover="enterUOfM" v-on:click="enterUOfM" v-on:mouseleave="leaveUOfM">
           <mdb-list-group-item>
             <div
               class="z-depth-1 rounded-circle mr-3 animated infinite uofm-logo"
@@ -32,7 +32,7 @@
             </div>
           </mdb-list-group-item>
         </div>
-        <div v-on:mouseover="enterCMU" v-on:mouseleave="leaveCMU">
+        <div v-on:mouseover="enterCMU" v-on:click="enterCMU" v-on:mouseleave="leaveCMU">
           <mdb-list-group-item>
             <div
               class="z-depth-1 rounded-circle mr-3 animated infinite cmu-logo"
