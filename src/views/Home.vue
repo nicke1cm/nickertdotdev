@@ -9,7 +9,7 @@
           <h4>Skills</h4>
           <Skills />
           <h4 class="mt-3">Education</h4>
-          <Education/>
+          <Education />
           <h4 class="mt-3">Experience</h4>
           <mdb-card class="mt-3">
             <mdb-list-group>
@@ -29,11 +29,21 @@
                     <!-- <div>2018 - Present</div> -->
                   </div>
                   <div class="d-flex justify-content-between">
-                    <span class="font-weight-lighter">Software Engineer <a href="#"><i class="fas fa-info-circle"></i></a></span>
+                    <span class="font-weight-lighter">
+                      Software Engineer
+                      <a href="#">
+                        <i class="fas fa-info-circle"></i>
+                      </a>
+                    </span>
                     <span>2019 - now</span>
                   </div>
                   <div class="d-flex justify-content-between">
-                    <span class="font-weight-lighter">Junior Software Engineer <a href="#"><i class="fas fa-info-circle"></i></a></span>
+                    <span class="font-weight-lighter">
+                      Junior Software Engineer
+                      <a href="#">
+                        <i class="fas fa-info-circle"></i>
+                      </a>
+                    </span>
                     <span>2018 - 2019</span>
                   </div>
                 </div>
@@ -62,11 +72,7 @@
             </mdb-list-group>
           </mdb-card>
           <h4 class="mt-3">Projects</h4>
-          <mdb-card class="mt-3">
-            <mdb-list-group>
-              <mdb-list-group-item>Prog[in]ress</mdb-list-group-item>
-            </mdb-list-group>
-          </mdb-card>
+          <Projects/>
         </mdb-col>
         <mdb-col lg="5" xl="4">
           <div class="sticky-top pt-5 pb-4">
@@ -123,6 +129,7 @@ import Hero from "@/components/Home/Hero.vue";
 import LinkedInBox from "@/components/LinkedInBox/LinkedInBox";
 import Footer from "@/components/Footer.vue";
 import Skills from "@/components/Home/Skills";
+import Projects from "@/components/Home/Projects";
 import Education from "@/components/Home/Education";
 import JobPostingModal from "@/components/JobPostingModal.vue";
 import CoverLetterModal from "@/components/CoverLetterModal.vue";
@@ -155,6 +162,7 @@ export default {
     Footer,
     Skills,
     Education,
+    Projects,
     JobPostingModal,
     CoverLetterModal
   },
@@ -195,4 +203,5 @@ export default {
 .home {
   height: 100%;
 }
+
 </style>
