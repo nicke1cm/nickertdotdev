@@ -37,7 +37,6 @@
             </div>
           </mdb-card-body>
         </mdb-list-group-item>
-        
       </mdb-list-group>
     </mdb-card>
   </div>
@@ -62,22 +61,22 @@ export default {
   },
   data: () => {
     return {
-      currentOpenPanel: -1
+      currentOpenPanels: ""
     };
   },
   methods: {
     openPanel: function(panelIndex) {
-      console.log("yeet");
-      let isAlreadyOpen = this.currentOpenPanel == panelIndex;
-      if (isAlreadyOpen) {
-        this.currentOpenPanel = -1;
+      if (this.isPanelOpen(panelIndex)) {
+        this.currentOpenPanels = this.currentOpenPanels.replace(
+          panelIndex.toString(),
+          ""
+        );
       } else {
-        console.log("moose");
-        this.currentOpenPanel = panelIndex;
+        this.currentOpenPanels += panelIndex;
       }
     },
     isPanelOpen: function(panelIndex) {
-      return this.currentOpenPanel == panelIndex;
+      return this.currentOpenPanels.indexOf(panelIndex.toString()) > -1;
     }
   }
 };
@@ -96,5 +95,6 @@ export default {
 
 .open {
   max-height: 200px;
+  overflow: hidden;
 }
 </style>
