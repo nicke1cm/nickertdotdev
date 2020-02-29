@@ -20,8 +20,8 @@
                   <div>
                     <span>Jan 2020 – Present</span>
                     <i
-                      :class="isPanelOpen(0)? 'fa-chevron-up': 'fa-chevron-down'"
-                      class="pink-text ml-3 fas fa-2x"
+                      :class="isPanelOpen(0)? 'fa-chevron-up flipInX': 'fa-chevron-down fadeIn'"
+                      class="animated pink-text ml-3 fas fa-2x"
                     ></i>
                   </div>
                 </a>
@@ -51,8 +51,8 @@
               <div>
                 <span>Apr 2019 – Present</span>
                 <i
-                  :class="isPanelOpen(1)? 'fa-chevron-up': 'fa-chevron-down'"
-                  class="pink-text ml-3 fas fa-2x"
+                  :class="isPanelOpen(1)? 'fa-chevron-up flipInX': 'fa-chevron-down fadeIn'"
+                  class="animated pink-text ml-3 fas fa-2x"
                 ></i>
               </div>
             </a>
@@ -83,8 +83,8 @@
               <div>
                 <span>Oct 2019 – Dec 2019</span>
                 <i
-                  :class="isPanelOpen(2)? 'fa-chevron-up': 'fa-chevron-down'"
-                  class="pink-text ml-3 fas fa-2x"
+                  :class="isPanelOpen(2)? 'fa-chevron-up flipInX': 'fa-chevron-down fadeIn'"
+                  class="animated pink-text ml-3 fas fa-2x"
                 ></i>
               </div>
             </a>
@@ -147,7 +147,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
 .accordion-body {
-  transition: max-height 0.3s linear;
+  transition: max-height 0.2s ease-in-out;
 }
 
 .accordion:hover {

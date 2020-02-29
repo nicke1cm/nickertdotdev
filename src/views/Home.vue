@@ -72,10 +72,26 @@
             </mdb-list-group>
           </mdb-card>
           <h4 class="mt-3">Projects</h4>
-          <Projects/>
+          <Projects />
+
+          <!-- <mdb-card class="mt-3">
+            <mdb-list-group>
+              <mdb-list-group-item style="padding-top: 56.25%;">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube-nocookie.com/embed/5V3P3icn12U?controls=0"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  style="border-radius: .3em;  position: absolute;   top: 0; left: 0; bottom: 0; right: 0;"
+                ></iframe>
+              </mdb-list-group-item>
+            </mdb-list-group>
+          </mdb-card>-->
         </mdb-col>
         <mdb-col lg="5" xl="4">
-          <div class="sticky-top pt-5 pb-4">
+          <div class="sticky-top pt-5">
             <div class="card" style="width: fit-content; margin: auto;">
               <LinkedInBox />
             </div>
@@ -117,6 +133,19 @@
           </div>
         </mdb-col>
       </mdb-row>
+      <hr class="mt-5 mb-5" />
+      <mdb-row>
+        <mdb-col class="pb-4">
+          <div>
+            <h3 class="code pink-text">Let's Get Personal</h3>
+          </div>
+          <mdb-btn color="pink">About Me</mdb-btn>
+          <mdb-btn color="pink">My Blog</mdb-btn>
+          <div>
+            <small class="code">Learn a little bit more about me.</small>
+          </div>
+        </mdb-col>
+      </mdb-row>
     </mdb-container>
     <Footer />
   </div>
@@ -134,6 +163,7 @@ import Education from "@/components/Home/Education";
 import JobPostingModal from "@/components/JobPostingModal.vue";
 import CoverLetterModal from "@/components/CoverLetterModal.vue";
 import {
+  mdbBtn,
   mdbCard,
   mdbContainer,
   mdbRow,
@@ -150,6 +180,7 @@ export default {
     animateOnScroll
   },
   components: {
+    mdbBtn,
     mdbCard,
     mdbContainer,
     mdbRow,
@@ -203,5 +234,4 @@ export default {
 .home {
   height: 100%;
 }
-
 </style>
