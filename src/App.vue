@@ -38,11 +38,23 @@ export default {
   height: 100%;
 }
 
-html, body {
+html,
+body {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
-code, .code {
+code,
+.code {
   font-family: "Courier Prime Code";
+}
+
+
+.link {
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 </style>
