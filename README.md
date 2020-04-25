@@ -2,7 +2,7 @@
 
 ## GitHub Pages Release
 ```
-git checkout master && git pull && git branch -D gh-pages && git checkout -b "gh-pages" && npm run build && git subtree push --prefix dist origin gh-pages
+git checkout master && git pull && git branch -D gh-pages || git checkout -b "gh-pages" && npm run build && git subtree push --prefix dist origin gh-pages
 ```
 
 ## Project setup
