@@ -9,7 +9,13 @@
         <mdb-container>
           <mdb-row>
             <mdb-col md="12" class="text-center">
-              <h1 class="h1-reponsive white-text code">
+              <img
+                src="../../assets/avatar.jpeg"
+                class="img-fluid z-depth-3 rounded-circle m-auto p-1"
+                alt="Central Michigan University Logo"
+                width="200px"
+              />
+              <h1 class="h1-reponsive white-text code mt-5">
                 <strong>
                   <span class="d-inline-flex">Cameron Michael Nickert</span>
                   <span class="pink-text" style="font-size: 1rem;">{{getDegreeStatus}}</span>
@@ -112,6 +118,12 @@ export default {
 
 .hero {
   height: calc(100vh - 60px);
+}
+
+@media (max-width: 767px) {
+  .hero {
+    height: calc(120vh) !important;
+  }
 }
 
 .hero .view {

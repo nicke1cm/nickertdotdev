@@ -4,54 +4,51 @@
     <HelloWorld msg="Welcome to Your Vue.js App"/>-->
     <Hero />
     <mdb-container fluid class="elegant-color p-5">
-      <mdb-row class="h-100 text-center p-5">
-        <mdb-col col="sm" class="d-flex">
-          <div class="pink-text text-center m-auto code w-100">
-            <mdb-row class="h-100 text-center">
-              <mdb-col col="sm" class="d-flex">
-                <div class="pink-text text-center m-auto code">
-                  <h1 class="display-1">
-                    <i class="fas fa-globe-americas"></i>
-                  </h1>
-                  <p>Travel.</p>
-                </div>
-              </mdb-col>
-              <mdb-col col="sm" class="d-flex">
-                <div class="pink-text text-center m-auto code">
-                  <h1 class="display-1">
-                    <i class="fas fa-tree"></i>
-                  </h1>
-                  <p>Hiking.</p>
-                </div>
-              </mdb-col>
-              <mdb-col col="sm" class="d-flex">
-                <div class="pink-text text-center m-auto code">
-                  <h1 class="display-1">
-                    <i class="fas fa-campground"></i>
-                  </h1>
-                  <p>Camping.</p>
-                </div>
-              </mdb-col>
-              <mdb-col col="sm" class="d-flex">
-                <div class="pink-text text-center m-auto code">
-                  <h1 class="display-1">
-                    <i class="fas fa-anchor"></i>
-                  </h1>
-                  <p>Boating.</p>
-                </div>
-              </mdb-col>
-              <mdb-col col="sm" class="d-flex">
-                <div class="pink-text text-center m-auto code">
-                  <h1 class="display-1">
-                    <i class="fas fa-basketball-ball"></i>
-                  </h1>
-                  <p>Sports.</p>
-                </div>
-              </mdb-col>
-            </mdb-row>
-          </div>
-        </mdb-col>
-      </mdb-row>
+      <div class="pink-text text-center m-auto code w-100">
+        <h1 class="mb-5">Who I Am.</h1>
+        <mdb-row class="text-center">
+          <mdb-col col="sm" class="d-flex">
+            <div class="pink-text text-center m-auto code">
+              <h1 class="display-1 mb-0">
+                <i class="fas fa-globe-americas"></i>
+              </h1>
+              <p>Travel.</p>
+            </div>
+          </mdb-col>
+          <mdb-col col="sm" class="d-flex">
+            <div class="pink-text text-center m-auto code">
+              <h1 class="display-1 mb-0">
+                <i class="fas fa-tree"></i>
+              </h1>
+              <p>Hiking.</p>
+            </div>
+          </mdb-col>
+          <mdb-col col="sm" class="d-flex">
+            <div class="pink-text text-center m-auto code">
+              <h1 class="display-1 mb-0">
+                <i class="fas fa-campground"></i>
+              </h1>
+              <p>Camping.</p>
+            </div>
+          </mdb-col>
+          <mdb-col col="sm" class="d-flex">
+            <div class="pink-text text-center m-auto code">
+              <h1 class="display-1 mb-0">
+                <i class="fas fa-anchor"></i>
+              </h1>
+              <p>Boating.</p>
+            </div>
+          </mdb-col>
+          <mdb-col col="sm" class="d-flex">
+            <div class="pink-text text-center m-auto code">
+              <h1 class="display-1 mb-0">
+                <i class="fas fa-basketball-ball"></i>
+              </h1>
+              <p>Sports.</p>
+            </div>
+          </mdb-col>
+        </mdb-row>
+      </div>
     </mdb-container>
     <mdb-container fluid class="cloudy-knoxville-gradient pb-3">
       <mdb-row>
