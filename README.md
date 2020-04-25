@@ -2,7 +2,7 @@
 
 ## GitHub Pages Release
 ```
-git checkout master && git reset --hard HEAD^ && git pull && git branch -D gh-pages || git checkout -b "gh-pages" && npm run build && git add dist -f && git commit -m "release" && git push -D origin gh-pages || git subtree push --prefix dist origin gh-pages
+git checkout master && git reset --hard HEAD^ && git pull && git branch -D gh-pages && git checkout -b "gh-pages" && npm run build && touch dist/CNAME && echo "cameron.nickert.dev" > dist/CNAME && git add dist -f && git commit -m "release" && git push -D origin gh-pages && git subtree push --prefix dist origin gh-pages
 ```
 
 ## Project setup
