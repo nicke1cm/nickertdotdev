@@ -171,7 +171,7 @@
             <mdb-card class="mt-3" style="width: 330px; margin: auto;">
               <mdb-list-group>
                 <mdb-list-group-item>
-                  <a>
+                  <a target="_blank" href="/ResumeCameronNickert.pdf">
                     <i class="fas fa-file-download mr-2"></i>Download My Resume
                   </a>
                 </mdb-list-group-item>
